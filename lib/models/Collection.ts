@@ -1,4 +1,4 @@
-import mongoose, { Collection } from "mongoose";
+import mongoose from "mongoose";
 
 const collectionSchema = new mongoose.Schema({
     title:{
@@ -27,5 +27,5 @@ const collectionSchema = new mongoose.Schema({
     }
      
 })
-const collection = mongoose.models.collection || mongoose.model("Collection",collectionSchema);
+const Collection = mongoose.models.Collection || mongoose.model("Collection",collectionSchema);
 export default Collection;

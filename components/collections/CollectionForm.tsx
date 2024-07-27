@@ -25,9 +25,9 @@ const formSchema = z.object({
   image: z.string(),
 });
 
-/*interface CollectionFormProps {
+interface CollectionFormProps {
   initialData?: CollectionType | null; //Must have "?" to make it optional
-}*/
+}
 
 const CollectionForm = () => {
   const router = useRouter();
